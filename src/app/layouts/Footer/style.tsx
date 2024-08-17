@@ -1,4 +1,5 @@
 'use client';
+
 import styled from 'styled-components';
 import { colors } from '../../../../styles/utilities/variables';
 
@@ -11,4 +12,10 @@ const StyledFooter = styled.div`
   color: ${colors.fire};
 `;
 
-export default StyledFooter;
+const StyledFooterText = styled.h5`
+  font-family: 'new-spirit';
+  /* font-family: 'DM Sans', sans-serif; */
+  font-weight: 600;
+`;
+
+export { StyledFooter, StyledFooterText };

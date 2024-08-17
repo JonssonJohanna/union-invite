@@ -1,7 +1,33 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../../public/fonts/DMSans-Italic-VariableFont_opsz\,wght.woff2')
+      format('woff2'),
+    url('../../public//fonts/DMSans-Italic-VariableFont_opsz\,wght.woff')
+      format('woff');
+  font-weight: 400; /* Normal weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DM_Sans-Bold.woff2') format('woff2'),
+    url('/fonts/DM_Sans-Bold.woff') format('woff');
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'new-spirit';
+  src: url('../../public/fonts/New\ Spirit\ Bold.woff2') format('woff2'),
+    url('/fonts/DM_Sans-Bold.woff') format('woff');
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DM_Sans-Bold.woff') format('woff2'),
+    url('/fonts/DM_Sans-Bold.woff') format('woff');
+  font-weight: 700; /* Bold weight */
+  font-style: normal;
 }
 
 html,
