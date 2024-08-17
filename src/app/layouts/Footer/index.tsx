@@ -1,8 +1,11 @@
+import StyledFooter from './style';
+import Icon from '../../../../components/Icon';
+
 const Footer = () => {
   return (
-    <div>
-      <a>Footer</a>
-    </div>
+    <StyledFooter>
+      <Icon imageSrc='/orangeicon.svg' size={60} />
+    </StyledFooter>
   );
 };
 

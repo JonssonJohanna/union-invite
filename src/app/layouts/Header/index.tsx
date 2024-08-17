@@ -1,9 +1,6 @@
+import StyledHeader from './style';
 const Header = () => {
-  return (
-    <div>
-      <a>Home</a>
-    </div>
-  );
+  return <StyledHeader />;
 };
 
 export default Header;
