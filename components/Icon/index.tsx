@@ -30,11 +30,7 @@ const Icon = (props: iIcon) => {
       marginTop={marginTop}
       color={props.color}
     >
-      <img
-        src={imageSrc}
-        alt={text || 'icon'}
-        style={{ width: size, height: size }}
-      />
+      <img src={imageSrc} alt={text || 'icon'} style={{ width: size }} />
       {text && <span>{text}</span>}{' '}
     </StyledIcon>
   );

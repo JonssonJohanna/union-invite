@@ -1,11 +1,14 @@
+'use client';
 import Image from 'next/image';
 import styles from './page.module.css';
-import MainLayout from '@/views/Layout/MainLayout';
+import TextSection from '../../components/textSection';
+import LocationSection from '../../components/locationSection';
 
 export default function Home() {
   return (
     <>
-      <h1>Home page</h1>
+      <TextSection></TextSection>
+      <LocationSection></LocationSection>
     </>
   );
 }
