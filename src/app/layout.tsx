@@ -1,3 +1,4 @@
+'use client';
 import Header from './layouts/Header';
 import Footer from './layouts/Footer';
 import './globals.css';
@@ -12,7 +13,6 @@ export default function RootLayout({
     <html lang='en'>
       <head>
         <link rel='icon' href='/logo.png' type='image/png' />
-        {/* Om du behöver fler favicon-varianter, lägg till dem här */}
       </head>
       <body
         style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}

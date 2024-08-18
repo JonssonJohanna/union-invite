@@ -1,9 +1,11 @@
-'use client';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { colors, mq } from '../../../../styles/utilities/variables';
+import Button from '../../../../components/Button';
 
 const StyledHeader = styled.div`
-  padding: 27px 24px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,18 +16,17 @@ const StyledHeader = styled.div`
     flex-direction: column;
   }
 `;
-const Logo = styled.div`
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: 100%;
-
+const NavContainer = styled.div`
+  max-width: 940px;
+`;
+const InfoButton = styled.button`
+  font-family: 'new-spirit';
+  font-weight: 400;
+  color: ${colors.ocean};
   @media ${mq.tabletPortraitDown} {
     position: initial;
     width: initial;
     margin: 0 auto 0 0;
   }
 `;
-export default StyledHeader;
+export { StyledHeader, NavContainer, InfoButton };

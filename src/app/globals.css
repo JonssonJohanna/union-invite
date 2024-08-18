@@ -4,12 +4,12 @@
       format('woff2'),
     url('../../public//fonts/DMSans-Italic-VariableFont_opsz\,wght.woff')
       format('woff');
-  font-weight: 400; /* Normal weight */
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans bold';
   src: url('/fonts/DM_Sans-Bold.woff2') format('woff2'),
     url('/fonts/DM_Sans-Bold.woff') format('woff');
   font-weight: 700; /* Bold weight */
@@ -18,13 +18,6 @@
 @font-face {
   font-family: 'new-spirit';
   src: url('../../public/fonts/New\ Spirit\ Bold.woff2') format('woff2'),
-    url('/fonts/DM_Sans-Bold.woff') format('woff');
-  font-weight: 700; /* Bold weight */
-  font-style: normal;
-}
-@font-face {
-  font-family: 'DM Sans';
-  src: url('/fonts/DM_Sans-Bold.woff') format('woff2'),
     url('/fonts/DM_Sans-Bold.woff') format('woff');
   font-weight: 700; /* Bold weight */
   font-style: normal;

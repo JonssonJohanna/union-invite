@@ -1,7 +1,8 @@
-
 @font-face {
-    font-family:"DM Sans 9pt Italic";
-    src:url("DMSans-Italic-VariableFont_opsz,wght.woff2") format("woff2"),url("DMSans-Italic-VariableFont_opsz,wght.woff") format("woff"),url("DMSans-Italic-VariableFont_opsz,wght.otf") format("opentype");
-    font-style:normal;font-weight:400;
+  font-family: 'DM Sans 9pt Italic';
+  src: url('DMSans-Italic-VariableFont_opsz,wght.woff2') format('woff2'),
+    url('DMSans-Italic-VariableFont_opsz,wght.woff') format('woff'),
+    url('DMSans-Italic-VariableFont_opsz,wght.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
 }
-        

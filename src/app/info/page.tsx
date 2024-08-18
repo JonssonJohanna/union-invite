@@ -1,7 +1,7 @@
 export default function InfoPage() {
   return (
     <>
-      <h1>Info</h1>
+      <h1>Good to know</h1>
     </>
   );
 }
