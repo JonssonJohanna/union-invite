@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { colors, mq } from '../../../../styles/utilities/variables';
+import { colors, mq, typography } from '../../../../styles/utilities/variables';
 import Button from '../../../../components/Button';
 
 const StyledHeader = styled.div`
@@ -17,10 +17,16 @@ const StyledHeader = styled.div`
   }
 `;
 const NavContainer = styled.div`
+  width: 940vw;
   max-width: 940px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
 `;
 const InfoButton = styled.button`
-  font-family: 'new-spirit';
+  font-family: ${typography.secondaryFont};
   font-weight: 400;
   color: ${colors.ocean};
   @media ${mq.tabletPortraitDown} {

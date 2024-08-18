@@ -1,21 +1,34 @@
 'use client';
 
 import styled from 'styled-components';
-import { colors } from '../../../../styles/utilities/variables';
+import { colors, typography } from '../../../../styles/utilities/variables';
 
 const StyledFooter = styled.div`
-  padding: 27px 24px;
+  padding: 40px 30px 30px;
+  position: relative;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   background-color: ${colors.sand};
-  color: ${colors.fire};
+`;
+const StyledContainer = styled.div`
+  width: 940vw;
+  max-width: 940px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const StyledFooterText = styled.h5`
-  font-family: 'new-spirit';
-  /* font-family: 'DM Sans', sans-serif; */
-  font-weight: 600;
+  font-family: ${typography.secondaryFont};
+  color: ${colors.fire};
+  font-weight: 400;
+  font-size: ${typography.sizes._08};
+`;
+const LinkContainer = styled.div`
+  grid-column-gap: 20px;
+  display: flex;
 `;
 
-export { StyledFooter, StyledFooterText };
+export { StyledFooter, StyledFooterText, StyledContainer, LinkContainer };
