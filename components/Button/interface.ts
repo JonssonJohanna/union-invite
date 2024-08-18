@@ -23,7 +23,7 @@ export default interface iButton {
   left?: number | string;
   right?: number | string;
   bottom?: number | string;
-  type?: 'outlined' | 'solid';
+  type?: 'outlined' | 'solid' | 'transparent';
   disabled?: boolean;
   cancel?: boolean;
   submit?: boolean;

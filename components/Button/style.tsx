@@ -6,7 +6,7 @@ const solidButton = css`
   padding: ${spacing._12} ${spacing._28};
   background: ${colors.ocean};
   text-transform: uppercase;
-  font-family: 'DM Sans';
+  font-family: ${typography.primaryFont};
   border-radius: 20px;
   letter-spacing: 2px;
   cursor: pointer;
@@ -21,25 +21,44 @@ const solidButton = css`
 `;
 
 const outlinedButton = css`
+  color: ${colors.forest};
+  padding: ${spacing._12} ${spacing._28};
+  background: ${colors.ocean};
+  border: 1px solid ${colors.forest};
+  text-transform: uppercase;
+  font-family: ${typography.primaryFont};
+  border-radius: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-size: ${typography.sizes._08};
+  height: 20px;
+
+  &:hover {
+    color: ${colors.ocean};
+    background-color: ${colors.forest};
+  }
+`;
+const transparent = css`
   border-radius: 0;
   background: ${colors.transparent};
   border: none;
   color: ${colors.ocean};
   text-transform: none;
   cursor: pointer;
-  font-family: 'new-spirit';
+  font-family: ${typography.secondaryFont};
   font-size: ${typography.sizes._09};
+  font-weight: 400;
 
-  /* &:hover {
-    color: ${colors.white};
-    background-color: ${colors.fire};
+  &:hover {
+    color: ${colors.ocean};
+    font-style: italic;
     border: 1px solid ${colors.transparent};
-    transform: translateY(-4px) translateX(-4px);
-    box-shadow: 4px 4px 0 ${colors.grey65};
-  } */
+  }
 `;
 
-const StyledButton = styled.button<{ type?: 'outlined' | 'solid' }>`
+const StyledButton = styled.button<{
+  type?: 'outlined' | 'solid' | 'transparent';
+}>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +67,13 @@ const StyledButton = styled.button<{ type?: 'outlined' | 'solid' }>`
   position: relative;
 
   ${({ type }) =>
-    type === 'solid' ? solidButton : type === 'outlined' ? outlinedButton : ''}
+    type === 'solid'
+      ? solidButton
+      : type === 'outlined'
+      ? outlinedButton
+      : type === 'transparent'
+      ? transparent
+      : ''}
 `;
 
 export default StyledButton;
