@@ -1,9 +1,10 @@
 {
   "button": {
+    "homePage": "Homepage",
     "goodToKnow": "Good to know",
+    "aBitAboutTheArea": "A bit about the area",
     "rsvp": "rsvp",
     "celebrateWithUs": "Celebrate with us",
-    "Ella": "Ella",
-    "James": "James"
+    "seeYouThere?": "Will we see you there?"
   }
 }

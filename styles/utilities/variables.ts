@@ -114,8 +114,7 @@ export const alignItems = {
 
 export const typography = {
   primaryFont: 'DM Sans',
-  secondaryFont: 'Gilroy Regular',
-  playFairDisplay: 'PlayfairDisplay',
+  secondaryFont: 'new-spirit',
   encodeSans: 'EncodeSans',
   lineHeights: {
     _160: 1.6,
