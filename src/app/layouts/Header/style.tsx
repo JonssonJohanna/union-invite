@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { colors, mq, typography } from '../../../../styles/utilities/variables';
-import Button from '../../../../components/Button';
+import iHeader from './interface';
 
 const StyledHeader = styled.div`
   padding-left: 3rem;
@@ -16,6 +16,13 @@ const StyledHeader = styled.div`
     flex-direction: column;
   }
 `;
+const DynamicHeader = styled(StyledHeader)<iHeader>`
+  background-color: ${({ isHomePage }) =>
+    isHomePage ? `${colors.forest}` : `${colors.ocean}`};
+  color: ${({ isHomePage }) =>
+    isHomePage ? `${colors.ocean}` : `${colors.forest}`};
+`;
+
 const NavContainer = styled.div`
   width: 940vw;
   max-width: 940px;
@@ -24,15 +31,31 @@ const NavContainer = styled.div`
   align-items: flex-start;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
 `;
 const InfoButton = styled.button`
+  border-radius: 0;
+  background: ${colors.transparent};
+  border: none;
+  text-transform: none;
+  cursor: pointer;
   font-family: ${typography.secondaryFont};
+  font-size: ${typography.sizes._09};
   font-weight: 400;
-  color: ${colors.ocean};
-  @media ${mq.tabletPortraitDown} {
-    position: initial;
-    width: initial;
-    margin: 0 auto 0 0;
+
+  &:hover {
+    font-style: italic;
   }
 `;
-export { StyledHeader, NavContainer, InfoButton };
+const DynamicInfoButton = styled(InfoButton)<iHeader>`
+  color: ${({ isHomePage }) =>
+    isHomePage ? `${colors.ocean}` : `${colors.forest}`};
+`;
+
+export {
+  StyledHeader,
+  DynamicHeader,
+  NavContainer,
+  InfoButton,
+  DynamicInfoButton,
+};

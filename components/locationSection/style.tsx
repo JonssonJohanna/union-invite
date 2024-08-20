@@ -12,7 +12,6 @@ const LocationContainer = styled.div`
   padding: 80px 280px;
   height: 700px;
   width: auto;
-  justify-content: space-between;
 `;
 const TextWrapper = styled.div`
   flex-wrap: wrap;

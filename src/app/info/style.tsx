@@ -5,16 +5,20 @@ import { typography, colors } from '../../../styles/utilities/variables';
 const SectionContainer = styled.div`
   background-color: ${colors.ocean};
   color: ${colors.forest};
+  display: flex;
+  justify-content: center;
+  padding: 5%;
 `;
 const SectionContent = styled.div`
-  width: 940vw;
+  width: 1000px;
   max-width: 940px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
-  margin-left: auto;
-  margin-right: auto;
   flex-direction: column;
+  height: auto;
+  padding-left: 10%;
+  padding-right: 10%;
 `;
 
 const Section = styled.section`
