@@ -1,16 +1,14 @@
-import { useContext, useEffect, useState } from 'react';
 import {
-  StyledHeader,
   NavContainer,
   DynamicHeader,
   DynamicInfoButton,
+  DynamicIcon,
+  DynamicButton,
 } from './style';
 import Text from '../../../../helpers/constants/texts.json';
-import Icon from '../../../../components/Icon';
 import Button from '../../../../components/Button';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { colors } from '../../../../styles/utilities/variables';
 
 const Header = () => {
   const pathname = usePathname();
@@ -25,10 +23,12 @@ const Header = () => {
           </DynamicInfoButton>
         </Link>
         <Link href={'./'}>
-          <Icon imageSrc='/logowedding.svg' size={50} />
+          <DynamicIcon isHomePage={isHomePage}></DynamicIcon>
         </Link>
         <Link href={'../../rsvp'}>
-          <Button type='solid'>{Text.button.rsvp}</Button>
+          <DynamicButton isHomePage={isHomePage}>
+            {Text.button.rsvp}
+          </DynamicButton>
         </Link>
       </NavContainer>
     </DynamicHeader>

@@ -1,6 +1,15 @@
 import styled from 'styled-components';
-import { colors, mq, typography } from '../../../../styles/utilities/variables';
+import {
+  colors,
+  mq,
+  spacing,
+  typography,
+} from '../../../../styles/utilities/variables';
 import iHeader from './interface';
+import homeIcon from '../../../../public/logowedding.svg';
+import forestIcon from '../../../../public/weddinglogoforest.svg';
+import iButton from '@/app/interface';
+import Button from '../../../../components/Button';
 
 const StyledHeader = styled.div`
   padding-left: 3rem;
@@ -52,10 +61,44 @@ const DynamicInfoButton = styled(InfoButton)<iHeader>`
     isHomePage ? `${colors.ocean}` : `${colors.forest}`};
 `;
 
+const DynamicIcon = styled.div<iHeader>`
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-image: ${({ isHomePage }) =>
+    isHomePage ? `url(${homeIcon.src})` : `url(${forestIcon.src})`};
+`;
+const DynamicButton = styled(Button)<iHeader>`
+  padding: ${spacing._12} ${spacing._28};
+  background: ${colors.ocean};
+  text-transform: uppercase;
+  font-family: ${typography.primaryFont};
+  border-radius: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-size: ${typography.sizes._08};
+  height: 20px;
+  color: ${({ isHomePage }) =>
+    isHomePage ? `${colors.forest}` : `${colors.ocean}`};
+  background-color: ${({ isHomePage }) =>
+    isHomePage ? `${colors.ocean}` : `${colors.forest}`};
+
+  &:hover {
+    color: ${({ isHomePage }) =>
+      isHomePage ? `${colors.ocean}` : `${colors.forest}`};
+    background: ${({ isHomePage }) =>
+      isHomePage ? `${colors.forest}` : `${colors.ocean}`};
+    border: ${({ isHomePage }) =>
+      isHomePage ? `${colors.ocean} 1px solid` : `${colors.forest} 1px solid`};
+  }
+`;
+
 export {
   StyledHeader,
   DynamicHeader,
   NavContainer,
   InfoButton,
   DynamicInfoButton,
+  DynamicIcon,
+  DynamicButton,
 };
