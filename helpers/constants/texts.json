@@ -6,5 +6,18 @@
     "rsvp": "rsvp",
     "celebrateWithUs": "Celebrate with us",
     "seeYouThere?": "Will we see you there?"
+  },
+  "rsvp": {
+    "pleaseSubmitOne": "Please submit one rsvp per person",
+    "seeYouThere?": "Will we see you there",
+    "illBeThere": "I'll be there!",
+    "sorryMakeIt": "Sorry, I won't be able to make it!",
+    "yourName": "You name",
+    "skipQuestions": "(You can skip the questions below if you ticked 'No')",
+    "preference": "Please select your preference",
+    "selectDropdown": "Select from the dropdown list",
+    "diet": "Any other dietary requirements or allergies?",
+    "anythingElse": "Anything else?",
+    "submit": "Submit"
   }
 }

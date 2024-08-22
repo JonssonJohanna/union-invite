@@ -1,3 +1,4 @@
+'use client';
 import styled, { css } from 'styled-components';
 import { colors, spacing, typography } from '../../styles/utilities/variables';
 
