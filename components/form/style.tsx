@@ -13,6 +13,9 @@ const CheckboxLabel = styled.label`
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  &:focus {
+    font-family: ${typography.primaryFont};
+  }
 `;
 
 const CustomCheckbox = styled.input.attrs({ type: 'checkbox' })`
@@ -39,7 +42,7 @@ const Label = styled.label`
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  ${typography.primaryFont}
+  font-family: ${typography.secondaryFont};
 `;
 
 const Input = styled.input`

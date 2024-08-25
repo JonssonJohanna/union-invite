@@ -19,5 +19,69 @@
     "diet": "Any other dietary requirements or allergies?",
     "anythingElse": "Anything else?",
     "submit": "Submit"
+  },
+
+  "area": {
+    "longerText": "Updown is located in the outskirts of the small village of Betteshanger outside Deal. As it's a rural area, the best way to get around is by car. You'll find some pubs and smaller shops in the area but if you're looking for something to do, Deal is your best bet! We've listed some nice places below as well as some nearby towns.",
+    "thingsToDo": [
+      {
+        "name": "The Rose",
+        "description": "Beautiful hotel with a great restaurant."
+      },
+      {
+        "name": "Smugglers Record Shop",
+        "description": "Records and beer."
+      },
+      {
+        "name": "Le Pinardier",
+        "description": "Lovely wine bar with cheese, charcuteries, and apéritifs."
+      },
+      {
+        "name": "Frog And Scot",
+        "description": "Bistro with small plates and snacks."
+      },
+      {
+        "name": "Mileage",
+        "description": "Vintage furniture and items."
+      },
+      {
+        "name": "Deal Pier Kitchen",
+        "description": "Brunch with a view."
+      },
+      {
+        "name": "Deal Beach Parlour",
+        "description": "Retro café with ice cream desserts."
+      },
+      {
+        "name": "Deal Saturday Market",
+        "description": "Food, flowers & other bits every Saturday between 8am – 2pm."
+      },
+      {
+        "name": "Zetland Arms",
+        "description": "Pub on the beach in the next town south of Deal."
+      }
+    ],
+    "placesToVisit": [
+      {
+        "name": "Margate",
+        "description": "For arts and culture by the sea."
+      },
+      {
+        "name": "Whitstable",
+        "description": "For oysters and fish and chips."
+      },
+      {
+        "name": "Canterbury",
+        "description": "A UNESCO World Heritage Site, for historic buildings and general quaintness."
+      },
+      {
+        "name": "Dover",
+        "description": "For a walk along the white cliffs."
+      },
+      {
+        "name": "Rye",
+        "description": "For cobbled streets, cute houses, and locally grown wine Tillingham (lovely place to stay & eat)."
+      }
+    ]
   }
 }
